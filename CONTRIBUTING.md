@@ -56,4 +56,13 @@ Run the bundled demo as a user-facing smoke test:
 
 Describe the concrete behavior before and after the change, the command that verifies it, and any model limitation that remains. Keep unrelated refactors separate. Update the English and Danish guides together when commands, inputs, output, privacy behavior, or interpretation guidance changes.
 
+The `main` branch is protected. Work on a separate branch and open a pull request, including for documentation changes.
+
+- Keep the branch up to date with `main`. All four test jobs must pass: Linux and Windows, each with Python 3.10 and 3.14.
+- CodeQL merge protection checks for new high or critical security alerts and code-quality errors in the pull request diff. GitHub currently excludes Dependabot pull requests analyzed by CodeQL default setup from this rule; the four test jobs and manual merge still apply. See [GitHub's documented limits](https://docs.github.com/en/code-security/concepts/code-scanning/merge-protection).
+- Resolve outstanding review conversations before merging. No second reviewer is required, so the maintainer can still complete changes independently.
+- Merge with **Squash and merge**. Automatic merging is disabled; merged branches are deleted automatically and can be restored on GitHub.
+
+Workflows from outside contributors require approval before they run. Actions are limited to this owner's repositories and actions published by GitHub; introducing another action requires a separate review of the repository's Actions permissions.
+
 By contributing, you agree that your contribution is licensed under the repository's MIT License.
