@@ -2,6 +2,8 @@
 
 Contributions are welcome when they keep the analyzer understandable, read-only toward Home Assistant, and honest about the limits of static analysis.
 
+For suspected security vulnerabilities, follow the [security policy](SECURITY.md) and report privately instead of opening a public issue.
+
 The command-line implementation lives in `automation_lens.py`; the installed command is `automation-lens`.
 
 ## Prepare a development environment
