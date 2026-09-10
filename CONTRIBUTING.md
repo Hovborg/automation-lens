@@ -63,6 +63,6 @@ The `main` branch is protected. Work on a separate branch and open a pull reques
 - Resolve outstanding review conversations before merging. No second reviewer is required, so the maintainer can still complete changes independently.
 - Merge with **Squash and merge**. Automatic merging is disabled; merged branches are deleted automatically and can be restored on GitHub.
 
-Workflows from outside contributors require approval before they run. Actions are limited to this owner's repositories and actions published by GitHub; introducing another action requires a separate review of the repository's Actions permissions.
+For fork pull-request workflows, the approval policy is set to require approval for all external contributors. Actions are limited to this owner's repositories and actions published by GitHub; introducing another action requires a separate review of the repository's Actions permissions.
 
 By contributing, you agree that your contribution is licensed under the repository's MIT License.
