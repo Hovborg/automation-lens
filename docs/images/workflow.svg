@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc" font-family="Segoe UI,Arial,sans-serif">
+<title id="title">From configuration to a finding you can inspect</title><desc id="desc">Read Home Assistant exports, analyze the local snapshot, then verify the reported chain in Home Assistant. The tool does not change automations.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10" fill="#51dce9"/></marker></defs>
+<rect width="1200" height="280" rx="18" fill="#071522"/>
+<text x="40" y="42" fill="#92b5c8" font-size="14" letter-spacing="3">READ → ANALYZE → VERIFY</text>
+<g fill="#102738" stroke="#315263"><rect x="40" y="74" width="310" height="148" rx="12"/><rect x="445" y="74" width="310" height="148" rx="12"/><rect x="850" y="74" width="310" height="148" rx="12"/></g>
+<g fill="none" stroke="#51dce9" stroke-width="2" marker-end="url(#arrow)"><path d="M360 145h72"/><path d="M765 145h72"/></g>
+<g fill="#f2c06d" font-size="15" font-weight="bold"><text x="65" y="104">01 / READ</text><text x="470" y="104">02 / ANALYZE</text><text x="875" y="104">03 / VERIFY</text></g>
+<g fill="#edf6fc" font-size="24" font-weight="bold"><text x="65" y="143">Your configuration</text><text x="470" y="143">Local snapshot</text><text x="875" y="143">A useful finding</text></g>
+<g fill="#b6cfdd" font-size="16"><text x="65" y="175">API reads or exported files</text><text x="65" y="198">Devices · entities · automations</text><text x="470" y="175">Resolve references and links</text><text x="470" y="198">Inspect potential conflicts</text><text x="875" y="175">Follow the reported chain</text><text x="875" y="198">Check actual conditions and traces</text></g>
+<text x="600" y="254" text-anchor="middle" fill="#799baa" font-size="14">No service calls · No automatic fixes · No telemetry</text>
+</svg>

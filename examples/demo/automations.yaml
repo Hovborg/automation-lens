@@ -1,0 +1,57 @@
+# Entirely synthetic: do not install these deliberately conflicting automations.
+- id: demo_relay_on
+  alias: Demo - relay follows lamp
+  mode: single
+  triggers:
+    - trigger: state
+      entity_id: light.demo_lamp
+      to: 'on'
+  actions:
+    - action: switch.turn_on
+      target:
+        entity_id: switch.demo_relay
+- id: demo_lamp_off
+  alias: Demo - relay switches lamp off
+  mode: single
+  triggers:
+    - trigger: state
+      entity_id: switch.demo_relay
+      to: 'on'
+  actions:
+    - action: light.turn_off
+      target:
+        entity_id: light.demo_lamp
+- id: demo_motion_on
+  alias: Demo - motion lights lamp
+  mode: single
+  triggers:
+    - trigger: state
+      entity_id: binary_sensor.demo_motion
+      to: 'on'
+  actions:
+    - action: light.turn_on
+      target:
+        entity_id: light.demo_lamp
+- id: demo_missing
+  alias: Demo - retired lamp reference
+  mode: single
+  triggers:
+    - trigger: state
+      entity_id: binary_sensor.demo_motion
+      to: 'on'
+  actions:
+    - action: light.turn_on
+      target:
+        entity_id: light.demo_retired
+- id: demo_delay
+  alias: Demo - single-mode timer
+  mode: single
+  triggers:
+    - trigger: state
+      entity_id: binary_sensor.demo_motion
+      to: 'on'
+  actions:
+    - delay: '00:05:00'
+    - action: light.turn_off
+      target:
+        entity_id: light.demo_lamp

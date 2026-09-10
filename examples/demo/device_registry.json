@@ -1,0 +1,1 @@
+{"data":{"devices":[{"id":"demo-light-device","name":"Demo lamp","area_id":"demo_room"},{"id":"demo-relay-device","name":"Demo relay","area_id":"demo_room"},{"id":"demo-motion-device","name":"Demo motion sensor","area_id":"demo_room"}]}}

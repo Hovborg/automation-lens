@@ -1,0 +1,60 @@
+name: Feature request
+description: Propose a focused Automation Lens improvement
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the use case with fictional entities. Do not attach Home Assistant exports, tokens, traces, private URLs, registry files, or real household configuration.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What investigation is difficult with the current commands or findings?
+      placeholder: "When a fictional automation uses ..., it is difficult to see ..."
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed behavior
+      description: Describe the command, output, or analysis behavior you would expect.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Findings and severity
+        - Explain or chain output
+        - Simulator
+        - Home Assistant fetch
+        - YAML or JSON parsing
+        - JSON output
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Synthetic example
+      description: Show the smallest fictional entity or automation shape that motivates the feature.
+      render: yaml
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Analysis limits
+      description: Which templates, branches, integration behavior, or live state could make the result uncertain?
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and privacy check
+      options:
+        - label: The proposal keeps Home Assistant access read-only and does not require action calls, configuration writes, telemetry, or automatic token storage.
+          required: true
+        - label: The example is fictional and contains no real export, token, private address, identifier, location, name, or household routine.
+          required: true

@@ -1,0 +1,1 @@
+{"data":{"entities":[{"id":"demo-lamp-entry","entity_id":"light.demo_lamp","device_id":"demo-light-device","name":"Demo lamp"},{"id":"demo-relay-entry","entity_id":"switch.demo_relay","device_id":"demo-relay-device","name":"Demo relay"},{"id":"demo-motion-entry","entity_id":"binary_sensor.demo_motion","device_id":"demo-motion-device","name":"Demo motion sensor"}]}}

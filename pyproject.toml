@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automation-lens"
+version = "0.1.0"
+description = "Read-only static analysis of Home Assistant automations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Brian Hovborg"}]
+dependencies = ["PyYAML>=6.0,<7"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+automation-lens = "automation_lens:main"
+
+[project.urls]
+Homepage = "https://github.com/Hovborg/automation-lens"
+Issues = "https://github.com/Hovborg/automation-lens/issues"
+
+[tool.setuptools]
+py-modules = ["automation_lens"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
