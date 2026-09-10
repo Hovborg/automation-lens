@@ -18,6 +18,10 @@ This is a community-maintained project. Reports are reviewed as maintainer time 
 
 ## Security boundaries
 
+Automation Lens is a local command-line tool operated by the person who supplies its arguments and environment. The operator chooses the authorized Home Assistant URL and the local data directory; these settings are trusted configuration. The contents of automation files and API responses remain untrusted input.
+
+The project does not provide a hosted or multi-user service. A wrapper that accepts URLs, directory paths, or environment settings from other users must enforce its own access controls and validate those values before calling Automation Lens. Run the tool with ordinary user permissions and use a dedicated data directory that untrusted users cannot modify, including its files and symbolic links.
+
 - Home Assistant access is read-only: REST reads and WebSocket registry listing. Analysis must not trigger actions or change configuration.
 - Access tokens are supplied explicitly by the user. The application must not persist tokens in its analysis cache or forward them to redirected hosts.
 - Automation files and cached JSON are inputs to analysis, not executable code. Reproduction cases must use synthetic data.
